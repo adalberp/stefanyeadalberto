@@ -1,0 +1,29 @@
+<h2>Posts</h2>
+
+<%= display_when_present @posts do %>
+  <ul class="list">
+    <% @posts.each do |post| %>
+      <%= content_tag_for :li, post, :class => cycle(:odd, :even) do %>
+        <%= link_to post.title.titleize, [:admin, post] %>
+
+        <div class="right">
+          <%= link_to_edit [:edit, :admin, post] %>
+          <%= link_to_destroy [:admin, post] %>
+        </div>
+        
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
+
+<hr class="thick" />
+
+<div class="bar">
+  <div class="left">
+    <%= will_paginate @posts %>
+  </div>
+  <div class="right">
+    <%= link_to t(".categories"), admin_post_categories_path, :class => "button" %>
+    <%= link_to_new Post, new_admin_post_path, :class => "button" %>
+  </div>
+</div>

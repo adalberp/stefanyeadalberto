@@ -1,0 +1,17 @@
+Hi there,
+
+You just received a new inquiry.
+
+--- inquiry starts ---
+
+From: <%= @inquiry.name %>
+Email: <%= @inquiry.email %>
+
+Message:
+<%= @inquiry.message %>
+
+--- inquiry ends ---
+
+You can also review this inquiry in your admin area:
+
+<%= admin_inquiry_url(@inquiry) %>

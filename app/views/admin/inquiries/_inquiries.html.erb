@@ -1,0 +1,15 @@
+<table class="grid">
+  
+  <tr class="header">
+    <th colspan="4"> <%= title %> </th>
+  </tr>
+
+  <% if inquiries.present? %>
+    <%= render inquiries %>
+  <% else %>
+    <tr><td class="hint">There are no open inquiries</td></tr>
+  <% end %>
+  
+</table>
+
+<br/>

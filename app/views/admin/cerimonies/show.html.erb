@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Local:</b>
+  <%= @cerimony.local %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @cerimony.address %>
+</p>
+
+
+<%= link_to 'Edit', edit_cerimony_path(@cerimony) %> |
+<%= link_to 'Back', cerimonies_path %>

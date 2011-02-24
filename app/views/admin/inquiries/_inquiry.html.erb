@@ -1,0 +1,11 @@
+<%= content_tag_for :tr, inquiry, :class => row_class(inquiry) do %>
+  <td><%= truncate(inquiry.name) %></td>
+  <td><%= inquiry.subject %></td>
+  <td style="width:400px;"><%= truncate(inquiry.message, :length => 50) %></td>
+
+  <td style="width: 180px; text-align:center;">
+    <%= link_to "show", [:admin, inquiry], :class => "button" %>
+    <%= toggle_open inquiry %>
+    <%= link_to "delete", [:admin, inquiry], :confirm => t("confirm"), :method => :delete, :class => "button" %>
+  </td>
+<% end %>

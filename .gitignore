@@ -1,0 +1,13 @@
+db/*.sqlite3
+log/*.log
+tmp/**/*
+db/schema.sql
+doc/*
+uploads/*
+public/system
+.DS_Store
+.project
+ssl/*
+Icon?
+.bundle
+Gemfile.lock

@@ -1,0 +1,89 @@
+LOG:  database system was shut down at 2010-12-27 20:21:07 BRST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "cancao_test" does not exist
+ERROR:  function "array_accum" already exists with same argument types
+STATEMENT:            CREATE AGGREGATE array_accum (anyelement)
+	          (
+	              sfunc = array_append,
+	              stype = anyarray,
+	              initcond = '{}'
+	          );
+	
+ERROR:  language "plpgsql" already exists
+STATEMENT:  CREATE LANGUAGE 'plpgsql';
+ERROR:  cannot drop table bank_account_migrations because other objects depend on it
+DETAIL:  default for table account_migrations column id depends on sequence account_migrations_id_seq
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+STATEMENT:  DROP TABLE "bank_account_migrations"
+LOG:  unexpected EOF on client connection
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2010-12-28 16:52:44 BRST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2010-12-28 18:26:36 BRST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2010-12-30 17:28:40 BRST
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2011-01-02 20:18:34 BRST
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 694) running in data directory "/opt/local/var/db/postgresql84/defaultdb"?
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2011-02-03 16:50:24 BRST
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2011-02-06 03:18:49 BRST
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2011-02-06 21:42:04 BRST
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2011-02-06 23:19:18 BRST
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+FATAL:  terminating autovacuum process due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2011-02-21 08:49:43 BRT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

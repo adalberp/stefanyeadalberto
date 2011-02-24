@@ -1,0 +1,28 @@
+<div class="asset">
+  <div class="preview">
+    <%= link_to image_tag(@asset.document.url(:medium)), @asset.document.url, :target => "_blank" %>
+  </div>
+
+  <div class="info">
+    <p>
+      <b>Title:</b>
+      <%= @asset.title %> 
+      <span class="hint">
+        (<%= number_to_human_size @asset.document_file_size %>)
+        <%= @asset.document_content_type %>
+      </span>
+    </p>
+
+    <p>
+      <b>Description:</b>
+      <%= @asset.description %>
+    </p>
+
+    <hr class="thick" />
+
+    <p>
+      <%= link_to 'Edit', edit_admin_asset_path(@asset), :class => "button" %>
+      <%= link_to 'Back', admin_assets_path, :class => "button" %>
+    </p>
+  </div>
+</div>

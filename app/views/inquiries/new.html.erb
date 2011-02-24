@@ -1,0 +1,10 @@
+<div class="rgtWrap">
+<%= form_for @inquiry do |f| %>
+  <%= error_messages_for @inquiry %>
+    <%= f.label :subject %>: <%= f.select :subject, options_for_subject %>
+    <%= f.text_field :email, :placeholder => "email", :class => "txt" %>
+    <%= f.text_field :name, :placeholder => "Seu nome", :class => "txt" %>
+    <%= f.text_area :message, :placeholder => "Descreva sua dúvida", :class => "txt" %>
+    <%= f.submit  "Enviar", :class => "btn" %>
+<% end %>
+</div>

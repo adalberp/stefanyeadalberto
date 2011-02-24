@@ -1,0 +1,36 @@
+<%= display_when_present @presents do %>
+  <table class="grid">
+    <% @presents.each do |present| %>
+      <%= content_tag_for :tr, present, :class => cycle(:odd, :even) do %>
+        <td>
+          <%= link_to present.store, [:edit, :admin, present] %>
+        </td>
+        <td>
+          <%= present.address %>
+        </td>
+        <td>
+          <%= link_to present.url, present.url %>
+        </td>
+        <td>
+          <%= present.contact %>
+        </td>
+        <td style="width:15%; text-align:right;">
+          <%= link_to_edit [:edit, :admin, present] %>
+          <%= link_to_destroy [:admin, present] %>
+        </td>
+      <% end %>
+    <% end %>
+  </table>
+<% end %>
+
+<hr class="thick" />
+
+<div class="bar">
+  <div class="left">
+    <%= will_paginate @present %>
+  </div>
+  
+  <div class="right">
+    <%= link_to_new Present, new_admin_present_path, :class => "button" %>
+  </div>
+</div>

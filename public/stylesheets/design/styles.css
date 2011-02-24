@@ -1,0 +1,153 @@
+html{background:#151515}
+body										{margin:0; background:#151515; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
+*											{margin:0; padding:0}
+a											{outline:0; text-decoration:none}
+img											{border:0}
+h1,h2,h3,h4,h5,h6							{font-weight:normal}
+li											{list-style:none}
+
+#head										{width:100%; float:left; background:url(/images/headBg.png) repeat-x}
+.head_height								{height:478px}
+.head_pad									{padding-bottom:30px}
+#head_cen									{width:800px; margin:0 auto}
+#head_sup									{width:800px; float:left; position:relative}
+#head p.search								{width:auto; margin-top:12px; float:right; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:11px; color:#999999; line-height:25px; letter-spacing:1px}
+#head p.search label						{width:auto; margin-right:10px; float:left}
+#head p.search input.txt					{width:135px; height:21px; margin-right:7px; float:left; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; color:#2c2d2c; border:0; background:url(/images/searchbg.png) no-repeat}
+#head p.search input.btn					{width:68px; height:21px; float:left; border:0; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:11px; color:#999999; text-align:center; cursor:pointer; background:url(/images/searchbtn.png) no-repeat}
+#head p.search input.btn:active				{background-position:2px 2px}
+h1.logo										{width:160px; height:36px; margin-top:112px; float:left; background:url(/images/logo.png) no-repeat}
+h1.logo a									{width:100%; height:100%; float:left; text-indent:-9999px}
+#head ul									{width:600px; height:44px; margin-top:58px; float:right}
+#head ul li									{width:auto; margin-left:1px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#5f5f5f; line-height:35px; text-transform:uppercase}
+#head ul li:first-child						{margin:0}
+#head ul li	a,#head ul li a.active			{width:auto; height:42px; padding:0 23px; float:left; color:inherit; background:#252525}
+#head ul li	a:hover,#head ul li a.active	{color:#31a1ff; background:#272727}
+#cu3er-container							{width:800px; height:360px; float:left; outline:0; position:absolute; top:166px; left:0px; z-index:10}
+img.ban_bg									{width:auto; float:left; position:absolute; top:139px; left:-24px}
+
+#content									{width:100%; padding-bottom:36px; float:left; background:#ffffff url(/images/contentBg.png) repeat-x}
+#content_cen								{width:800px; margin:0 auto}
+#content_sup								{width:800px; float:left; position:relative}
+#ct_pan										{width:100%; height:120px; margin-top:94px; float:left; position:relative; font-family:Tahoma, Geneva, sans-serif; font-size:12px; color:#999999; line-height:16px; background:#3b3b3b}
+#ct_pan p									{width:312px; margin:34px 52px 0 34px; float:left}
+#ct_pan p a									{color:#31a1ff; text-transform:uppercase}
+#ct_pan ul									{width:195px; margin-top:26px; float:left}
+#ct_pan ul li								{width:100%; float:left}
+#ct_pan ul li a								{color:inherit; text-decoration:underline; line-height:20px}
+#ct_pan ul li a:hover						{color:#31a1ff}
+#ct_pan a.tweet								{width:95px; height:102px; float:right; position:absolute; right:-50px; top:42px; background:url(/images/tweet.png) no-repeat}
+
+#welcom_pan									{width:100%; margin-top:37px; padding-bottom:36px; float:left; border-bottom:#c9c9c9 solid 1px; background:url(/images/crosslines.png) no-repeat right 8px}
+h2											{width:auto; margin-top:9px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:26px; color:#31a1ff; font-weight:bold; line-height:30px; letter-spacing:-1.7px}
+h2 span										{color:#3b3b3b; text-transform:uppercase; margin-right:5px}
+#welcom_pan a.brochure						{width:auto; height:54px; margin-right:31px; padding:0 8px 0 0; float:right; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:bold; line-height:54px; background:url(/images/buttonBg.png) no-repeat right -54px}
+#welcom_pan a.brochure span					{width:auto; height:54px; padding:0 13px 0 23px; float:left; background:url(/images/buttonBg.png) no-repeat 0 0}
+#welcom_pan p								{width:755px; margin:25px 0 0 14px; float:left; font-size:12px; color:#4d4d4d; line-height:18px}
+#welcom_pan	iframe							{margin:37px 0 0 14px; float:left; border-bottom:#c9c9c9 solid 1px; background:url(/images/crosslines.png) no-repeat right 8px}
+#welcom_pan a.enlarg						{width:auto; margin:15px 0 0 14px; float:left; color:#848484}
+#welcom_pan h3								{clear:left}
+.lftWrap									{width:300px; float:left; clear:left}
+.lftWrap p									{width:100%; float:left; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:28px; color:#4d4d4d}
+.rgtWrap input.txt							{width:176px; margin:20px 20px 0 0; padding:3px 5px; height:30px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:17px; color:#bfbfbf; font-weight:bold; border:#cbcbcb solid 1px; background:#ffffff}
+.rgtWrap input.btn							{width:113px; height:42px; margin-top:18px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:17px; color:#ffffff; font-weight:bold; text-align:center; cursor:pointer; border:0; background:url(/images/submitBtn.png) no-repeat}
+.rgtWrap input.btn:active					{background-position:1px 1px}
+.rgtWrap									{width:500px; float:left}
+.rgtWrap h3									{width:100%}
+h3											{width:auto; float:left; font-family:Arial, Helvetica, sans-serif; font-size:26px; color:#31a1ff; font-weight:bold; line-height:60px; letter-spacing:-1.7px}
+h3 span										{color:#3b3b3b; margin-right:0px}
+ul#infoPan									{width:100%; float:left}
+ul#infoPan li								{width:226px; margin-left:56px; float:left}
+ul#infoPan li:first-child					{margin:0}
+ul#infoPan li h3							{width:100%; height:67px; float:left; font-size:26px; color:#31a1ff; font-weight:bold; line-height:60px; letter-spacing:-1.7px}
+ul#infoPan li h3 span						{color:#3b3b3b; margin-right:2px}
+ul#infoPan li h3 img						{margin-right:31px; float:right}
+ul#infoPan li p								{width:100%; margin-top:25px; float:left; font-size:18px; color:#848484; line-height:24px; letter-spacing:-0.8px}
+ul#infoPan li p.descrip						{margin-top:13px; font-size:12px; line-height:16px;}
+
+#quotPan									{width:848px; height:80px; margin-top:42px; float:left; position:relative; left:-24px; border-top:#c9c9c9 solid 1px; background:url(/images/pat.png) repeat }
+#quotPan h3									{width:274px; margin:14px 0 0 24px; float:left; line-height:45px}
+#quotPan input.txt							{width:176px; margin:20px 20px 0 0; padding:3px 5px; height:30px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:17px; color:#bfbfbf; font-weight:bold; border:#cbcbcb solid 1px; background:#ffffff}
+#quotPan input.btn							{width:113px; height:42px; margin-top:18px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:17px; color:#ffffff; font-weight:bold; text-align:center; cursor:pointer; border:0; background:url(/images/submitBtn.png) no-repeat}
+#quotPan input.btn:active					{background-position:1px 1px}
+
+#blog										{width:506px; margin-top:24px; float:left}
+#blog ul									{width:100%; float:left}
+#blog ul li									{width:100%; margin-top:21px; float:left; border-top:#c9c9c9 solid 1px}
+#blog ul li:first-child						{margin-top:0; border:0}
+#blog ul li a								{width:auto; margin-top:25px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#848484; line-height:24px}
+#blog ul li p								{width:100%; margin-top:16px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5c5c5c; line-height:16px}
+
+#latest										{width:233px; margin:24px 0 0 60px; float:left}
+#latest ul									{width:100%; float:left}
+#latest ul li								{width:100%; margin-top:10px; float:left; border-top:#c9c9c9 solid 1px}
+#latest ul li:first-child					{margin-top:0; border:0}
+#latest ul li a								{width:auto; margin-top:10px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#848484; line-height:24px}
+#latest ul li p								{width:100%; margin-top:16px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5c5c5c; line-height:16px}	
+
+#foot										{width:100%; height:163px; float:left; background:url(/images/footBg.png) repeat-x}
+#foot_cen									{width:800px; margin:28px auto 0 auto}
+#foot h6									{width:160px; height:36px; margin:0 auto; text-indent:-9999px; background:url(/images/logo.png) no-repeat}
+#foot h6 a									{width:100%; height:100%; float:left}
+#foot ul									{width:400px; margin:11px auto 0 auto}
+#foot ul li									{width:auto; float:left; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; color:#767676; line-height:18px}
+#foot ul li a								{width:auto; float:left; color:inherit}
+#foot ul li.space							{width:auto; float:left; padding:0 6px}
+#foot p										{width:100%; margin-top:10px; float:left; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; color:#767676; line-height:18px; text-align:center}
+#foot p	a									{color:inherit}
+
+#service_pan								{width:100%; margin-top:20px; float:left}
+#service_pan ul								{width:100%; float:left}
+#service_pan ul li							{width:325px; height:100px; margin:0 30px; float:left; border-bottom:#c9c9c9 solid 1px}
+/*#service_pan ul li:first-child				{border:0}
+*/#service_pan ul li:hover					{background:#fbfbfb}
+#service_pan ul li h5						{width:auto; margin:10px 0 0 10px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#31a1ff}
+#service_pan ul li p						{width:300px; margin:5px 0 0 10px; float:left; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; color:#5c5c5c}
+#service_pan ul li p a						{width:auto; float:center; color:#31a1ff}
+
+/* s3slider
+----------------------------------------------- */
+#s3slider {
+width: 750px; /* largura total do slide*/
+height: 340px; /* altura total do slide*/
+position: relative; /* important */
+overflow: hidden; /* important */
+}
+
+#s3sliderContent {
+width: 750px; /* importante que as imagens devem ter a mesma largura ou mais */
+position: absolute; /* important */
+top: 0; /* important */
+padding: 0px;
+margin-left: 0; /* important */
+}
+
+.s3sliderImage {
+float: left; /* important */
+position: left; /* important */
+display: none; /* important */
+}
+.s3sliderImage span {
+position: absolute; /* important */
+left: 0;
+font: 15px/20px Arial, Helvetica, sans-serif;
+padding: 13px 13px;
+width: 750px;
+background-color: #000; /*cor de fundo do slide*/
+filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+-moz-opacity: 0.7; /* here you can set the opacity of box with text */
+-khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+opacity: 0.7; /* here you can set the opacity of box with text */
+color: #fff;
+display: none; /* important */
+bottom: 0;
+/*
+Nesta última linha em negrito, determina se a caixa de texto aparecerá na parte superior ou inferior das imagens
+top: 0; -> a caixa de texto aparecerá na parte superior
+si ponemos
+bottom: 0; -> a caixa de texto aparecerá na parte inferior
+*/
+}
+.clear {
+clear: both;
+}

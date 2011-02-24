@@ -1,0 +1,20 @@
+<%= form_for [:admin, @user] do |f| %>
+
+  <%= error_messages_for @user %>
+
+  <p><%= f.text_field :full_name, :placeholder => "full name" %></p>
+
+  <p><%= f.text_field :email, :placeholder => "email" %></p>
+
+  <p><%= f.password_field :password, :placeholder => "password" %></p>
+
+  <p><%= f.password_field :password_confirmation, :placeholder => "password confirmation" %></p>
+
+  <hr class="thick" />
+
+  <p>
+    <%= f.submit :class => "button" %> 
+    or <%= link_to "cancel", admin_users_path %>
+  </p>
+
+<% end %>

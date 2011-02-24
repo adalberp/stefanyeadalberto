@@ -1,0 +1,56 @@
+<body>
+<div id="content">
+ <div id="content_cen">
+  <div id="content_sup">
+   <div id="ct_pan">
+    <p><a href="#">NOSSA FRASE</a> <br>
+      Amar-te mais que a mim mesmo, amar-te mais que tudo que há aqui. Te amo para sempre! </p>
+     <ul>
+       <li></li>
+     </ul>
+     <ul>
+       <li>Obrigado por participar deste momento em nossas vidas.</li>
+       <li>Seja Bem-Vindo ao nosso site.</li>
+     </ul>
+     <a href="#" class="tweet"></a>
+   </div>
+   
+   <div id="welcom_pan">
+    <h2><span>NOSSA</span>História</h2>
+    <a class="brochure" href="posts/7-amor-pra-recordar"><span>DEIXE SEU RECADO</span></a>
+      <% @posts.each do |post| %>
+            <p><%= post.excerpt %></p>
+      <% end %>
+   </div>
+  
+  <div id="quotPan">
+   <h3><span>Últimos </span>Recados</h3>         
+  </div>
+
+  <div id="blog">
+   <ul>
+       <% @comments.each do |comment| %>
+      <li>
+         <a><%= comment.author %></a>
+         <p><%= comment.body %></p>
+      </li>
+       <% end %>
+   </ul>
+  </div>
+  
+  <div id="quotPan">
+   <h3><span>Últimos </span>Posts</h3>
+  </div>
+   
+   <ul id="infoPan">
+      <% @posts_home.each do |post| %>
+      <li>
+        <h3><%= post.title %></h3>
+          <p class="descrip"><%= post.excerpt %></p>
+      </li>
+      <% end %>
+   </ul>
+  </div>
+ </div>
+</div>
+</body>

@@ -1,0 +1,7 @@
+$("#media").append("<%= escape_javascript(render :partial => "asset", :collection => @assets) %>");
+
+<% unless @assets.total_pages == @assets.current_page %>
+  $("#more-assets").attr("href", "<%= assets_admin_posts_path(:page => @assets.next_page) %>");
+<% else %>
+  $("#more-assets").hide();
+<% end %>

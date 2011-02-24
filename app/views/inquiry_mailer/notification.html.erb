@@ -1,0 +1,20 @@
+<p>Hi there,</p>
+
+<p>You just received a new inquiry.</p>
+
+<p>
+  <b>From:</b>
+  <%= @inquiry.name %> <span class="hint">(<%= @inquiry.email %>)</span>
+</p>
+
+<p>
+  <b>Subject:</b> <%= @inquiry.subject %>
+</p>
+
+<p>
+  <%= simple_format @inquiry.message %>
+</p>
+
+<hr />
+
+<p>You can also review this inquiry in your <%= link_to "admin area", admin_inquiry_url(@inquiry) %></p>.

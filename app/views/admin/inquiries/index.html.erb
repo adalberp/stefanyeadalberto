@@ -1,0 +1,10 @@
+<h2>Inquiries</h2>
+
+<div id="open-inquiries">
+  <%= render 'inquiries', :inquiries => @open, :title => "Pending to review"  %>
+</div>
+
+<div id="closed-inquiries">
+  <%= render 'inquiries', :inquiries => @closed, :title => "Closed inquiries"  %>
+</div>
+

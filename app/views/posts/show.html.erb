@@ -1,0 +1,26 @@
+
+
+<div id="blog">
+    <h3><%= @post.title %></h3>
+    <ul>
+      <li>
+        <p>
+        <%= textilize @post.body %>
+        </p>
+      </li>                  
+        <%= @post.comments.count %> comentários
+        <li>
+          <%- if @post.comments.any? -%>
+              <%= render @post.comments %>
+          <%- else -%>
+              Não há comentários para este post.
+          <%- end -%>
+        </li>
+      </ul>
+        
+        <div id="comment-for">
+           <%= render "comments/form", :post => @post, :comment => Comment.new %>
+         </div>
+</div>
+
+    <%= render "sidebar" %>

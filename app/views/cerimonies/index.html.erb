@@ -1,0 +1,11 @@
+ <div id="welcom_pan">
+  <h2><span>Mapa</span> do local</h2>
+  <p>Aliquam ut ipsum non mi vehicula fringilla. Fusce ac risus eget felis mollis cursus eu eu mi. Ut vulputate adipiscing mauris, ac tincidunt enim tristique id. Integer eget turpis nunc. Ut ut diam urna. Duis gravida vehicula sem malesuada laoreet. In hac habitasse platea dictumst. Praesent eget dui ornare mauris auctor pellentesque. Vivamus non eros quis mi venenatis sollicitudin.</p>
+  <iframe width="750" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=Igreja+S%C3%A3o+Sebasti%C3%A3o+-+Cachoeira+Paulista+-+S%C3%A3o+Paulo,+Brazil&amp;sll=-22.665066,-45.008942&amp;sspn=0.001381,0.002127&amp;ie=UTF8&amp;geocode=Fegmpv4dOjhR_Q&amp;split=0&amp;hq=&amp;hnear=Igreja+S%C3%A3o+Sebasti%C3%A3o+-+Cachoeira+Paulista+-+S%C3%A3o+Paulo,+Brazil&amp;ll=-22.665502,-45.008841&amp;spn=0.037779,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Igreja+S%C3%A3o+Sebasti%C3%A3o+-+Cachoeira+Paulista+-+S%C3%A3o+Paulo,+Brazil&amp;sll=-22.665066,-45.008942&amp;sspn=0.001381,0.002127&amp;ie=UTF8&amp;geocode=Fegmpv4dOjhR_Q&amp;split=0&amp;hq=&amp;hnear=Igreja+S%C3%A3o+Sebasti%C3%A3o+-+Cachoeira+Paulista+-+S%C3%A3o+Paulo,+Brazil&amp;ll=-22.665502,-45.008841&amp;spn=0.037779,0.054932&amp;z=14&amp;iwloc=A" class="enlarg" target="_blank">Visualizar em tamanho maior</a></small>
+ </div>
+ <div class="lftWrap">
+  <h3><span>Endereço</span> da Cerimônia</h3>
+  <% @cerimonies.each do |cerimony| %>
+    <p><%= cerimony.local %>, <br /><%= cerimony.address %></p>
+  <% end %>
+  </div>

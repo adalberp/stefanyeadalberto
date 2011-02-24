@@ -1,0 +1,7 @@
+<% if @comment.valid? %>
+  $("#comments").append("<%= escape_javascript(render(@comment)) %>");
+  $("#<%= dom_id(@comment) %>").show('clip');
+  <% @comment = Comment.new %>
+<% end %>
+
+$("#comment_form").html("<%= escape_javascript(render("form", :post => @post, :comment => @comment)) %>")

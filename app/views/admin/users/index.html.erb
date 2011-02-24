@@ -1,0 +1,24 @@
+<h2>Users</h2>
+
+<%= display_when_present @users do %>
+<ul class="list">
+  <% @users.each do |user| %>
+    <%= content_tag_for :li, user, :class => cycle(:odd, :even) do %>
+      <%= link_to "#{user.full_name} (#{user.email})", [:admin, user] %>
+
+      <div class="right">
+        <%= link_to_edit [:edit, :admin, user] %>
+        <%= link_to_destroy [:admin, user] unless current_user == user %>
+      </div>
+    <% end %>
+  <% end %>
+</ul>
+<% end %>
+
+<hr class="thick" />
+
+<div class="bar">
+  <div class="right">
+    <%= link_to 'New user', new_admin_user_path, :class => "button" %>
+  </div>
+</div>

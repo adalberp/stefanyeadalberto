@@ -1,0 +1,26 @@
+ <div id="welcom_pan">
+  <h2><span>Lista</span> de presentes</h2>
+  <p>Aqui estão a nossa lista de presentes. Os presentes são também uma forma de recordar este momento especial em nossas vidas!</p>
+ </div>
+ <div id="service_pan">
+  <ul>
+  <% @presents.each do |present| %>
+   <li>
+    <h5><%= link_to present.store, present.url, :target => '_blank' %></h5>
+
+        <%- if present.address.present? -%>
+          <p>Endereço: <%= present.address  %> </p>
+        <%- end -%>    
+
+        <%- if present.url.present? -%>
+          <p>Site: <%= link_to present.url, present.url, :target => '_blank'  %> </p>
+        <%- end -%>    
+      
+        <%- if present.contact.present? -%>
+          <p>Contato: <%= present.contact %> </p>
+        <%- end -%>    
+
+    <% end %>
+   </li>
+  </ul>
+ </div>

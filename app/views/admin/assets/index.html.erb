@@ -1,0 +1,32 @@
+<h2>Assets</h2>
+
+<%= display_when_present @assets do %>
+  <table class="grid">
+    <% @assets.each do |asset| %>
+      <%= content_tag_for :tr, asset, :class => cycle(:odd, :even) do %>
+        <td style="width:10%">
+          <%= link_to image_tag(asset.document.url(:thumb), :class => "middle"), [:admin, asset] %>
+        </td>
+        <td>
+          <%= link_to asset.title, [:admin, asset] %>
+        </td>
+        <td style="width:15%; text-align:right;">
+          <%= link_to_edit [:edit, :admin, asset] %>
+          <%= link_to_destroy [:admin, asset] %>
+        </td>
+      <% end %>
+    <% end %>
+  </table>
+<% end %>
+
+<hr class="thick" />
+
+<div class="bar">
+  <div class="left">
+    <%= will_paginate @assets %>
+  </div>
+  
+  <div class="right">
+    <%= link_to 'New asset', new_admin_asset_path, :class => "button" %>
+  </div>
+</div>

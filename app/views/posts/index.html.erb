@@ -1,0 +1,21 @@
+
+
+<div id="blog"> 
+  <%= display_when_present @posts do %>
+    <%- @posts.each do |post| -%>
+    <h3><%= post.title %></h3>
+    <ul>
+      <li>
+        <%= textilize post.excerpt %>
+        <p><%= link_to "continue ...", post %></p>
+      </li>
+    </ul>
+   <%- end -%>
+</div>      
+
+<%= will_paginate @posts %>
+<% end %>
+
+<%= render "sidebar" %>
+
+

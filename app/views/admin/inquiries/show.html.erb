@@ -1,0 +1,22 @@
+<h2> Inquiry </h2>
+
+<p>
+  <b>From:</b>
+  <%= @inquiry.name %> <span class="hint">(<%= @inquiry.email %>)</span>
+</p>
+
+<p>
+  <b>Subject:</b> <%= @inquiry.subject %>
+</p>
+
+<p>
+  <%= simple_format @inquiry.message %>
+</p>
+
+<hr class="thick"/>
+
+<p>
+  <%= mail_to @inquiry.email, "Reply", :encode => "javascript", :class => "button" %>
+  or <%= link_to 'Back', admin_inquiries_path %>
+</p>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adalberto e Stefany</title>
+  <%= stylesheet_link_tag "design/styles" %>
+  <%= javascript_include_tag "lib/jquery", "lib/jquery-ui", "rails", "lib/s3Slider" %>
+  <%= csrf_meta_tag %>  
+
+  <script type='text/javascript'>
+    $(document).ready(function() {
+    $('#s3slider').s3Slider({
+    timeOut: 4000
+    });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="head">
+   <div id="head_cen">
+    <div id="head_sup" class="head_height">
+     <p class="search">
+     </p>
+      <h1 class="logo"><a href="/home">M CUBE</a></h1>
+      <ul>
+      <li>
+       <%= menu do |m| %>
+            <%= m.home root_path do %> HOME <% end %>
+            <%= m.posts posts_path do %> BLOG<% end %>
+            <%= m.presents presents_path do %> LISTA DE PRESENTES <% end %>
+            <%= m.cerimonies cerimonies_path do %> CERIMÔNIA <% end %>
+            <%= m.contact new_inquiry_path do %> CONTATO <% end %>
+        <% end %>
+      </li>  
+     </ul>
+     <div id="cu3er-container">
+       <div id="s3slider">
+         <ul id="s3sliderContent">
+           <li class="s3sliderImage">
+             <img src="images/home/1.jpg" />
+             <span>Amor da minha vida...</span>
+           </li>
+           <li class="s3sliderImage">
+             <img src="images/home/2.jpg" />
+             <span>texto-a-ser-exibido 2</span>
+           </li>
+       <div class="clear s3sliderImage"></div>
+       </ul>
+       </div>
+     </div>
+    </div>
+   </div>
+  </div>
+        
+  <div id="content">
+    <div id="content_cen">
+     <div id="content_sup">
+      <%= flash_messages %>
+      <%= yield %>                    
+     </div>
+    </div>
+  </div>
+
+  <div id="foot">
+   <div id="foot_cen">
+   <h6><a href="index.html">mcube</a></h6>
+   <ul>
+     <%= menu do |m| %>
+       <li>
+         <%= m.home "HOME", root_path %>
+         <li class="space">|</li>
+         <%= m.posts "BLOG", posts_path %>
+         <li class="space">|</li>
+         <%= m.present "LISTA DE PRESENTES", presents_path %>
+         <li class="space">|</li>
+         <%= m.cerimonies "CERIMÔNIA", cerimonies_path %>
+         <li class="space">|</li>
+      	 <%= m.contact "CONTATO", new_inquiry_path %>
+    	 </li>
+     <% end %>
+    </ul>
+      <p>Desenvolvedor: Adalberto Pereira. Design: <a href="http://www.templateworld.com" target="_blank">Template World</a></p>
+   </div>
+  </div>
+</body>
+</html>

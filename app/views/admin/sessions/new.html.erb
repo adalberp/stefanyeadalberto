@@ -1,0 +1,19 @@
+<h2>Sign in</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+  <p><%= f.text_field :email, :placeholder => ta(User, :email) %></p>
+  <p><%= f.password_field :password, :placeholder => ta(User, :password) %></p>
+
+  <% if devise_mapping.rememberable? -%>
+    <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+  <% end -%>
+
+  <hr class="thick" />
+
+  <p>
+    <%= f.submit "Sign in", :class => "button" %>
+    or <%= link_to "forgot your password?", new_password_path(resource_name) %>
+  </p>
+
+<% end %>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Producer</title>
+  <%= stylesheet_link_tag "admin", "scaffold" %>
+  <%= javascript_include_tag  "lib/jquery", "lib/jquery-ui", "rails" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="header">
+      <% if user_signed_in? %>
+        <div id="main-nav">
+          <%= menu do |m| %>
+            <%= m.dashboard 'Painel de controle', "#" %>
+            <%= m.posts 'Posts', admin_posts_path %>
+            <%= m.assets 'Imagens', admin_assets_path %>
+            <%= m.presents 'Lista de presentes', admin_presents_path %>
+            <%= m.cerimonies 'Cerimônia', admin_cerimonies_path %>
+            <%= m.inquiries 'Perguntas', admin_inquiries_path %>
+            <%= m.users 'Usuários', admin_users_path %>
+          <% end %>
+        </div>
+
+        <div id="user-bar">
+          <%= link_to "Sair", destroy_user_session_path %>
+        </div>
+      <% end %>
+    </div>
+
+    <div id="content-wrapper">
+      <div id="content">
+        <div class="in">
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= yield :bottom %>
+</body>
+</html>

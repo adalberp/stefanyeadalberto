@@ -1,0 +1,24 @@
+<h2>Posts Categories</h2>
+
+<%= display_when_present @categories do %>
+  <ul class="list">
+    <% @categories.each do |category| %>
+      <%= content_tag_for :li, category, :class => cycle(:odd, :even) do %>
+        <%= link_to category.name, [:admin, category] %>
+
+        <div class="right">
+          <%= link_to_edit [:edit, :admin, category] %>
+          <%= link_to_destroy [:admin, category] %>
+        </div>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
+
+<hr class="thick" />
+
+<div class="bar">
+  <div class="right">
+    <%= link_to 'New category', new_admin_post_category_path, :class => "button" %>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+en:
+  empty: "We don't have any record for this section."
+  confirm: Are you sure?
+  edit: Edit
+  destroy: Destroy
+  new: Create %{model}
+  cancel: Cancel
+  error_message_header: "%{count} error(s) prohibited this %{model} from being saved:"
+
+  admin:
+    posts:
+      index:
+        categories: Categories
+      new:
+        title: New post
+      edit:
+        title: Editing post
+      form:
+        categories: Publish with these categories
+        slug: Set a custom url
+        author: "Post by:"
+        media: "Images"
+        
+  contacts:
+    new:
+      subjects:
+        signup: I have a question before I sign up
+        request: I want to request a feature
+        billing: I have a billing question
+        confused: I'm confused about how something works
+        broken: I think something is broken
+        other: Other
