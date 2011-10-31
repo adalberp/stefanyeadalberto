@@ -1,6 +1,6 @@
 class Admin::PostCategoriesController < Admin::AdminController
   menu_item :posts
-  
+
   def index
     @categories = PostCategory.all
     respond_with @categories

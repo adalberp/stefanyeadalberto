@@ -1,4 +1,4 @@
-<div id="latest">  
+<div id="latest">
   <h3><span>Buscar</span></h3>
   <%= form_tag posts_path, :method => :get do %>
     <%= text_field_tag :search, "",
@@ -7,16 +7,16 @@
           :type => "search",
           :class => "search-field" %>
   <% end %>
-  
+
   <h3><span>Categorias </span></h3>
-  <ul>    
+  <ul>
       <% @categories.each do |category| %>
         <li>
           <%= link_to_unless_current category.name, posts_path(:category_id => category.id) %>
         </li>
       <% end %>
   </ul>
-    
+
   <h3><span>Acompanhe-nos </span> <%= link_to image_tag("feed.png"), posts_path(:format => :atom) %> </h3>
 </div>
 

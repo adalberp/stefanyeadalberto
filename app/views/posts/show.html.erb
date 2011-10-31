@@ -7,7 +7,7 @@
         <p>
         <%= textilize @post.body %>
         </p>
-      </li>                  
+      </li>
         <%= @post.comments.count %> comentários
         <li>
           <%- if @post.comments.any? -%>
@@ -17,7 +17,7 @@
           <%- end -%>
         </li>
       </ul>
-        
+
         <div id="comment-for">
            <%= render "comments/form", :post => @post, :comment => Comment.new %>
          </div>

@@ -1,8 +1,8 @@
 <% if resource.errors.any? %>
   <div id="error_explanation">
     <h2>
-      <%= t "error_message_header", 
-            :count => resource.errors.count, 
+      <%= t "error_message_header",
+            :count => resource.errors.count,
             :model => resource.class.model_name.human %>
     </h2>
 

@@ -1,6 +1,6 @@
 
 
-<div id="blog"> 
+<div id="blog">
   <%= display_when_present @posts do %>
     <%- @posts.each do |post| -%>
     <h3><%= post.title %></h3>
@@ -11,7 +11,7 @@
       </li>
     </ul>
    <%- end -%>
-</div>      
+</div>
 
 <%= will_paginate @posts %>
 <% end %>

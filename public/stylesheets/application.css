@@ -144,7 +144,7 @@ div#footer #footer-nav li.current a { color:#d7412c; }
   padding: .2em .5em;
   display: block;
   float: left;
-  margin-right: 3px; 
+  margin-right: 3px;
   border: 1px solid #D7412C;
   position: relative;
   color: #D7412C;
@@ -152,21 +152,21 @@ div#footer #footer-nav li.current a { color:#d7412c; }
 
 .pagination span.disabled {
   color: #929292;
-  border: 1px solid #DDD; 
+  border: 1px solid #DDD;
   background:none;
 }
 
 .pagination em {
   font-weight: bold;
   color: #FFF;
-  border: 1px solid #000;  
+  border: 1px solid #000;
   background: #000;
 }
 
 .pagination a {
   text-decoration: none;
   color: #666;
-  border: 1px solid #D7412C; 
+  border: 1px solid #D7412C;
 }
 
 .pagination:after {
@@ -174,7 +174,7 @@ div#footer #footer-nav li.current a { color:#d7412c; }
   display: block;
   height: 0;
   clear: both;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 * html .pagination { height: 1%; }

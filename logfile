@@ -9,7 +9,7 @@ STATEMENT:            CREATE AGGREGATE array_accum (anyelement)
 	              stype = anyarray,
 	              initcond = '{}'
 	          );
-	
+
 ERROR:  language "plpgsql" already exists
 STATEMENT:  CREATE LANGUAGE 'plpgsql';
 ERROR:  cannot drop table bank_account_migrations because other objects depend on it

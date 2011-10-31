@@ -2,20 +2,20 @@
 
 <%= div_for comment, :class => "comment" do %>
 
-  <div class="author">    
+  <div class="author">
     <!-- <div class="avatar"><%= gravatar_image_tag comment.email %></div> -->
     <a>
       <%= comment_author(comment.author) %>
     </a>
-    
+
     <div class="date">
       Postado <%= time_ago_in_words comment.created_at %> atrás
     </div>
-    
-    <p> 
+
+    <p>
       <%= comment.body %>
     </p>
-  
+
   </div>
 
 <% end %>
