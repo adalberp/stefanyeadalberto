@@ -1,5 +1,5 @@
 class Admin::PresentsController < Admin::AdminController
-    
+
     # GET /presents
     # GET /presents.xml
     def index
@@ -10,7 +10,7 @@ class Admin::PresentsController < Admin::AdminController
         format.xml  { render :xml => @presents }
       end
     end
-    
+
     # GET /presents/new
     # GET /presents/new.xml
     def new
@@ -43,7 +43,7 @@ class Admin::PresentsController < Admin::AdminController
       flash[:notice] = 'Present was successfully updated.' if @present.update_attributes(params[:present])
       respond_with @presents, :location => admin_presents_path
     end
-    
+
 
     # DELETE /presents/1
     # DELETE /presents/1.xml

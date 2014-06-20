@@ -1,6 +1,6 @@
 <%= form_for [:admin, @cerimony], :html => { :multipart => true } do |f| %>
   <%= error_messages_for @cerimony %>
-  
+
   <div class="field">
     <%= f.label :local %><br />
     <%= f.text_field :local %>
@@ -10,7 +10,7 @@
     <%= f.label :address %><br />
     <%= f.text_area :address %>
   </div>
-  
+
   <p>
     <%= f.submit :class => "button" %> or <%= link_to "cancel", admin_cerimonies_path %>
   </p>

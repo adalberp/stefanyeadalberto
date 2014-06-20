@@ -5,24 +5,24 @@
     <%= f.label :store, t(".store") %><br />
     <%= f.text_field :store %>
   </div>
-  
+
   <div class="field">
     <%= f.label :address, t(".address") %><br />
     <%= f.text_area :address %>
   </div>
-  
+
   <div class="field">
     <%= f.label :url %><br />
     <%= f.text_field :url %>
   </div>
-  
+
   <div class="field">
     <%= f.label :contact, t(".contact") %><br />
     <%= f.text_field :contact %>
   </div>
 
   <hr class="thick" />
-    
+
   <p>
     <%= f.submit :class => "button" %> ou <%= link_to t("cancel"), admin_presents_path %>
   </p>

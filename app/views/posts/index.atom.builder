@@ -1,7 +1,7 @@
 atom_feed do |feed|
   feed.title    "Feed"
   feed.updated  @posts.last.try(:updated_at)
- 
+
   @posts.each do |post|
     feed.entry post do |entry|
 

@@ -28,7 +28,7 @@ pt-BR:
         store: Nome da loja
         address: Endereço
         contact: Contato
-    
+
   contacts:
     new:
       subjects:
@@ -38,7 +38,7 @@ pt-BR:
         confused: Dúvida 4
         broken: Dúvida 5
         other: Outros
-        
+
   # rails defaults
   number:
     format:

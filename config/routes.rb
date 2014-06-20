@@ -1,5 +1,5 @@
 Producer::Application.routes.draw do |map|
-  
+
   resources :cerimonies
 
   root :to => "pages#index"

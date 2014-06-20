@@ -10,15 +10,15 @@
 
         <%- if present.address.present? -%>
           <p>Endereço: <%= present.address  %> </p>
-        <%- end -%>    
+        <%- end -%>
 
         <%- if present.url.present? -%>
           <p>Site: <%= link_to present.url, present.url, :target => '_blank'  %> </p>
-        <%- end -%>    
-      
+        <%- end -%>
+
         <%- if present.contact.present? -%>
           <p>Contato: <%= present.contact %> </p>
-        <%- end -%>    
+        <%- end -%>
 
     <% end %>
    </li>
